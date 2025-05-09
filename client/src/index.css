@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    
+    --primary: 178 70% 47%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 16 83% 67%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    --accent: 262 60% 66%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --ring: 215 20.2% 65.1%;
+    
+    --radius: 0.5rem;
+    
+    --chart-1: 178 70% 47%;
+    --chart-2: 16 83% 67%;
+    --chart-3: 262 60% 66%;
+    --chart-4: 142 71% 45%;
+    --chart-5: 0 0% 60%;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .gradient-teal {
+    @apply bg-gradient-to-r from-[#26C7C3] to-[#24A5A1];
+  }
+  
+  .gradient-orange {
+    @apply bg-gradient-to-r from-[#FF7A5A] to-[#FF4500];
+  }
+  
+  .gradient-purple {
+    @apply bg-gradient-to-r from-[#8E64F0] to-[#5E35B1];
+  }
+  
+  .gradient-red {
+    @apply bg-gradient-to-r from-[#FF4136] to-[#DD2C00];
+  }
+}
